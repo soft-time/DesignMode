@@ -18,6 +18,8 @@ Observer::~Observer()
 ConcreteObserverA::ConcreteObserverA(Subject* sub) 
 {
 	_sub = sub;
+
+	_sub->Attach(this);
 }
 
 ConcreteObserverA::~ConcreteObserverA() 
